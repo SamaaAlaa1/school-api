@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const mysql = require('mssql2');
+const mysql = require('mysql2');
 
 app.use(express.json());
 
