@@ -142,6 +142,8 @@ app.get("/students/:id/courses", (req, res) => {
 });
 
 // GET all students in a course
+
+
 app.get("/courses/:id/students", (req, res) => {
   db.query(
     `SELECT s.id, s.name, s.age, s.grade 
@@ -154,7 +156,11 @@ app.get("/courses/:id/students", (req, res) => {
       res.json(results);
     }
   );
+
+
 });
+
+
 
 
 app.listen(3000, () => {
